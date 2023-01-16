@@ -5,7 +5,7 @@ import { project } from "../../utils/";
 const Project = () => {
   return (
     <ul className={styles.projects}>
-      {project.map((item, index) => {
+      {project?.map((item, index) => {
         return (
           <li className={styles.project} key={index}>
             <a href={item.link} className={styles.link}>
