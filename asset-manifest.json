@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9bc2c436.css",
+    "main.js": "/portfolio/static/js/main.00b17dcf.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/img4.png": "/portfolio/static/media/img4.f580787061c778355d47.png",
+    "static/media/img5.png": "/portfolio/static/media/img5.b1d04a2b359e18198013.png",
+    "static/media/img3.png": "/portfolio/static/media/img3.d58d08e4beb5ef6812d5.png",
+    "static/media/travel.jpg": "/portfolio/static/media/travel.49ffcb471450f8eb1535.jpg",
+    "static/media/image.jpg": "/portfolio/static/media/image.d3deb49b920bc78fae9d.jpg",
+    "static/media/Belarus-Regular.ttf": "/portfolio/static/media/Belarus-Regular.a0775e90c6caea18acba.ttf",
+    "static/media/Sverdlovsk.otf": "/portfolio/static/media/Sverdlovsk.f0e12cbec617cd731c44.otf",
+    "static/media/img2.png": "/portfolio/static/media/img2.b1f229205d24aa8bf55c.png",
+    "static/media/img1.png": "/portfolio/static/media/img1.da48ac7deb25dac5cb0b.png",
+    "static/media/Belarus-Regular.otf": "/portfolio/static/media/Belarus-Regular.e618fa0b7d7aa4e10273.otf",
+    "static/media/logo.png": "/portfolio/static/media/logo.7643c9bd9d7e28ac30d0.png",
+    "index.html": "/portfolio/index.html",
+    "main.9bc2c436.css.map": "/portfolio/static/css/main.9bc2c436.css.map",
+    "main.00b17dcf.js.map": "/portfolio/static/js/main.00b17dcf.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bc2c436.css",
+    "static/js/main.00b17dcf.js"
+  ]
+}
