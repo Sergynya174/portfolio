@@ -1,0 +1,17 @@
+.App {
+  font-family: "Sverdlovsk", "Museo Sans 100", sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Sverdlovsk';
+  src: local('Sverdlovsk'), url(../../fonts/Sverdlovsk.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Belarus';
+  src: local('Belarus'), url(../../fonts/Belarus-Regular.otf) format('opentype');
+  src: local('Belarus'), url(../../fonts/Belarus-Regular.ttf) format('truetype');
+  src: local('Belarus'), url(../../fonts/Belarus-Regular.otf) format('opentype'); 
+}

@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 2vh 2vh;
+}
+
+.text{
+    color: white;
+    font-size: 2vh;
+    margin: 0;
+    font-family: 'Belarus';
+}
