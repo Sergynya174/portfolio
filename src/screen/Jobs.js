@@ -6,10 +6,10 @@ import styles from "../styles/Main.module.css";
 
 const Jobs = () => {
   return (
-    <div className={styles.sectionJob}>
+    <div className={styles.section}>
       <Header />
       <main className={styles.main}>
-        <div className={styles.containerJobs}>
+        <div className={styles.container}>
           <h2 className={styles.titleMe}>Работы</h2>
           <Project />
         </div>

@@ -20,6 +20,7 @@
     color: white;
     box-sizing: border-box;
     background-image: linear-gradient(to top, #434343 0%, #141618 100%);
+    height: 100vh
 }
 
 .main{
@@ -37,11 +38,17 @@
     flex-direction: column;
 }
 
+.mainJob{
+    display: flex;
+    align-items: center;
+    padding: 0 2vh;
+}
+
 .container{
     text-align: center;
     border-radius: 16px;
     margin: 0 auto;
-    width: 50%;
+    width: 100vh;
 }
 
 .containerHome{
@@ -145,9 +152,6 @@
     .textMe{
         font-size: 2.5vh;
     }
-    .mainMe{
-        height: 50%;
-    }
 }
 
 @media screen and (max-width: 576px) {
@@ -162,8 +166,5 @@
     .textMe{
         margin-top: 2vh;
         font-size: 2vh;
-    }
-    .mainMe{
-        height: 50%;
     }
 }
