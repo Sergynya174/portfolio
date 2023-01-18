@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Project.module.css";
-import { project } from "../../utils/";
+import { project } from "../../utils";
 
 const Project = () => {
   return (
