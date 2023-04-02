@@ -1,21 +1,23 @@
-import styles from "./App.module.css";
-import Home from "../../screen/Home";
-import AboutMe from "../../screen/AboutMe";
-import Jobs from "../../screen/Jobs";
-import Contacts from "../../screen/Contacts";
-
-import { Routes, Route } from "react-router-dom";
+import Header from "../Header/Header";
+import Home from "../Home/Home";
+import About from "../About/About";
+import Skills from "../Skills/Skills";
+import Portfolio from "../Portfolio/Portfolio";
+import Contacts from "../Contacts/Contacts";
+import Footer from "../Footer/Footer";
+import "boxicons";
 
 const App = () => {
   return (
-    <div className={styles.App}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about_me" element={<AboutMe />} />
-        <Route path="/jobs" element={<Jobs />} />
-        <Route path="/contacts" element={<Contacts />} />
-      </Routes>
-    </div>
+    <>
+      <Header />
+      <Home />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Contacts />
+      <Footer />
+    </>
   );
 };
 

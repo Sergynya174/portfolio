@@ -1,77 +1,75 @@
-.headerBlack{
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-.headerWhite{
-    display: flex;
-    justify-content: space-between;
-    background-color: wheat;
-    padding: 2vh;
+.navbar{
+    display: block;
 }
 
 .logo{
-    height: 5vh;
-    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
 }
 
-.logoContainer{
-    background-color: bisque;
-    border-radius: 50%;
-    width: 7vh;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.links{
-    display: flex;
-    align-items: center;
-    width: 50%;
-    justify-content: space-between;
-    max-width: 400px;
+#menu{
+   font-size: 3.6rem;
+   color: var(--text-color);
+   display: none;
+   cursor: pointer;
 }
 
 .link{
-    display: inline-block;
-    line-height: 1;
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 2.5vh;
-    white-space: nowrap;
-    margin-right: 10px;
-    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
 }
 
-.link:last-of-type{
-    margin-right: 0;
+.link:hover{
+    color: var(--main-color);
 }
 
-.link::after{
-    background-color: black;
-    display: block;
-    content: "";
-    height: 0.3vh;
-    width: 0%;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
-    border-radius: 8px;
-    opacity: .8;
+.linkActive{
+    color: var(--main-color);
 }
 
-.link:hover:after,
-.link:focus:after{
-    width: 100%;
+@media (max-width: 991px) {
+    .header{
+        padding: 2rem 3%;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
 }
 
-@media screen and (max-width: 576px) {
-    .logo{
-        height: 3vh;
+@media (max-width: 768px) {
+    #menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     }
     .link{
-        font-size: 1.7vh;
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
     }
 }

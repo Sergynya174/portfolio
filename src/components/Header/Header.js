@@ -1,35 +1,37 @@
-import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import logoBlack from "../../images/logo.png";
+import { useState } from "react";
 import styles from "./Header.module.css";
 
 const Header = () => {
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
-  const stylesLogo = pathname === "/" ? styles.headerBlack : styles.headerWhite;
-  const clickNavigate = () => {
-    navigate("/");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const clickOpenNavbar = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <header className={stylesLogo}>
-      <img
-        src={logoBlack}
-        className={styles.logo}
-        alt="logo"
-        onClick={clickNavigate}
-      />
-      <div className={styles.links}>
-        <a href="/about_me" className={styles.link}>
-          Обо мне
+    <header className={styles.header}>
+      <a href="#" className={styles.logo}>
+        Portfolio
+      </a>
+      {/* <i onClick={clickOpenNavbar} className="bx bx-x" id={styles.menu}></i> */}
+      <i onClick={clickOpenNavbar} className="bx bx-menu" id={styles.menu}></i>
+      <nav className={styles.navbar}>
+        <a className={styles.link} href="#home">
+          Home
         </a>
-        <a href="/jobs" className={styles.link}>
-          Работы
+        <a className={styles.link} href="#about_me">
+          About
         </a>
-        <a href="/contacts" className={styles.link}>
-          Связаться
+        <a className={styles.link} href="#skills">
+          Skills
         </a>
-      </div>
+        <a className={styles.link} href="#portfolio">
+          Portfolio
+        </a>
+        <a className={styles.link} href="#contacts">
+          Contact
+        </a>
+      </nav>
     </header>
   );
 };
