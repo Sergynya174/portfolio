@@ -32,6 +32,7 @@
     overflow: hidden;
     display: flex;
     height: 470px;
+    min-width: 230px;
 }
 
 .box .img{
@@ -94,5 +95,15 @@
     }
     .container{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box{
+        height: 230px;
+        min-width: 320px;
     }
 }

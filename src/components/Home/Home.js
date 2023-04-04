@@ -5,7 +5,7 @@ import Foto from "../../images/foto.png";
 const Home = () => {
   return (
     <section className={styles.home} id="home">
-      <div className={styles.content}>
+      <div className={styles.container}>
         <h3 className={styles.subtitle}>Hello, It`s Me</h3>
         <h1 className={styles.title}>Sergey Matrosov</h1>
         <h3 className={styles.subtitle}>
@@ -33,7 +33,9 @@ const Home = () => {
           Download CV
         </a>
       </div>
-      <img className={styles.img} src={Foto} alt="Фото" />
+      <div className={styles.circle}>
+        <img className={styles.img} src={Foto} alt="Фото" />
+      </div>
     </section>
   );
 };

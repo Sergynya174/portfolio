@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 2rem;
 }
 
 .title{
@@ -39,6 +40,11 @@
     margin: .7rem 0;
 }
 
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
 .textArea{
     width: 100%;
     padding: 1.5rem;
@@ -67,4 +73,13 @@
 
 .btn:hover{
     box-shadow: none;
+}
+
+@media (max-width: 420px) {
+    .inputBox{
+        flex-direction: column;
+    }
+    .input{
+        width: 100%;
+    }
 }

@@ -20,44 +20,44 @@ const Skills = () => {
       <div className={styles.container}>
         <div className={styles.box}>
           <div>
-            <i className="bx bxl-html5 bx-lg"></i>
-            <p className={styles.text}>HTML</p>
+            <i className="bx bxl-html5" id={styles.iconSkills}></i>
+            <p className={styles.textTechnologies}>HTML</p>
           </div>
           <div>
-            <i className="bx bxl-css3 bx-lg"></i>
-            <p className={styles.text}>CSS</p>
+            <i className="bx bxl-css3" id={styles.iconSkills}></i>
+            <p className={styles.textTechnologies}>CSS</p>
           </div>
           <div>
-            <i className="bx bxl-javascript bx-lg"></i>
-            <p className={styles.text}>JavaScript</p>
+            <i className="bx bxl-javascript" id={styles.iconSkills}></i>
+            <p className={styles.textTechnologies}>JavaScript</p>
           </div>
           <div>
-            <i className="bx bxl-react bx-lg"></i>
-            <p className={styles.text}>React</p>
+            <i className="bx bxl-react" id={styles.iconSkills}></i>
+            <p className={styles.textTechnologies}>React</p>
           </div>
           <div>
-            <i className="bx bxl-redux bx-lg"></i>
-            <p className={styles.text}>Redux</p>
+            <i className="bx bxl-redux" id={styles.iconSkills}></i>
+            <p className={styles.textTechnologies}>Redux</p>
           </div>
           <div>
-            <i className="bx bxl-nodejs bx-lg"></i>
-            <p className={styles.text}>Node.js</p>
+            <i className="bx bxl-nodejs" id={styles.iconSkills}></i>
+            <p className={styles.textTechnologies}>Node.js</p>
           </div>
           <div>
-            <i className="bx bxl-sass bx-lg"></i>
-            <p className={styles.text}>Sass</p>
+            <i className="bx bxl-sass" id={styles.iconSkills}></i>
+            <p className={styles.textTechnologies}>Sass</p>
           </div>
           <div>
-            <i className="bx bxl-typescript bx-lg"></i>
-            <p className={styles.text}>Typescript</p>
+            <i className="bx bxl-typescript" id={styles.iconSkills}></i>
+            <p className={styles.textTechnologies}>Typescript</p>
           </div>
           <div>
-            <i className="bx bxl-git bx-lg"></i>
-            <p className={styles.text}>Git</p>
+            <i className="bx bxl-git" id={styles.iconSkills}></i>
+            <p className={styles.textTechnologies}>Git</p>
           </div>
           <div>
-            <i className="bx bxl-mongodb bx-lg"></i>
-            <p className={styles.text}>MongoDB</p>
+            <i className="bx bxl-mongodb" id={styles.iconSkills}></i>
+            <p className={styles.textTechnologies}>MongoDB</p>
           </div>
         </div>
       </div>

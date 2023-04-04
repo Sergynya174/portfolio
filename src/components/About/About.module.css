@@ -7,8 +7,19 @@
     height: 100vh;
 }
 
+.circle{
+    border-radius: 50%;
+	height: 325px;
+	width: 325px;
+	border: 7px solid #0ef;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 7px 3px #0ef;
+}
+
 .img{
-    width: 35vw;
+    margin-top: 8px;
 }
 
 .title{
@@ -48,23 +59,18 @@
 
 @media (max-width: 991px) {
     .about{
-        flex-direction: column;
-    }
-    .img{
-        width: 70vw;
-        margin-top: 4rem;
+        flex-direction: column-reverse;
     }
     .title{
         margin-bottom: 3rem;
+    }
+    .circle{
+        margin-top: 10px;
     }
 }
 
 @media (max-width: 768px) {
     .about{
         flex-direction: column;
-    }
-    .img{
-        width: 70vw;
-        margin-top: 4rem;
     }
 }

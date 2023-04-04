@@ -9,7 +9,7 @@ const Portfolio = () => {
         Latest <span className={styles.span}>Projects</span>
       </h2>
       <div className={styles.container}>
-        {Images.map((item, index) => {
+        {/* {Images.map((item, index) => {
           return (
             <div className={styles.box} key={index}>
               <img className={styles.img} src={item.image} alt="Фото" />
@@ -22,7 +22,7 @@ const Portfolio = () => {
               </div>
             </div>
           );
-        })}
+        })} */}
       </div>
     </section>
   );

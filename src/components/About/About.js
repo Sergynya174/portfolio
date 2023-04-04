@@ -5,7 +5,7 @@ import Foto from "../../images/foto.png";
 const About = () => {
   return (
     <section className={styles.about} id="about_me">
-      <div>
+      <div className={styles.circle}>
         <img className={styles.img} src={Foto} alt="Фото" />
       </div>
       <div className={styles.content}>

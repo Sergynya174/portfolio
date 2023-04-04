@@ -29,3 +29,9 @@
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
+
+@media (max-width: 570px) {
+    .iconTop{
+        margin-top: 10px;
+    }
+}
