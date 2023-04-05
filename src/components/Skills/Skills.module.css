@@ -19,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .title{
@@ -29,11 +30,7 @@
 
 .subtitle{
     font-size: 2.6rem;
-}
-
-.text{
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+    margin-bottom: 1rem;
 }
 
 .textTechnologies{
@@ -61,6 +58,7 @@
     border-radius: 2rem;
     text-align: center;
     background: var(--second-bg-color);
+    margin-bottom: 3rem;
 }
 
 .btn{
@@ -100,15 +98,19 @@
         margin-bottom: 3rem;
     }
     .textTechnologies{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width: 420px) {
     .textTechnologies{
-        margin: 0.5rem 0 0.5rem;
+        margin: 0;
     }
     #iconSkills{
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    .box{
+        gap: 1rem;
+        padding: 1rem;
     }
 }

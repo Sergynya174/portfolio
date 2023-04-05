@@ -13,7 +13,15 @@ const About = () => {
           About <span className={styles.span}>Me</span>
         </h2>
         <h3 className={styles.subtitle}>Frontend Developer!</h3>
-        <p className={styles.text}>hello</p>
+        <p className={styles.text}>
+          I like that the profession of Frontend developer leaves room for
+          creativity, because any program can be written in many ways with
+          different approaches. I decided to change the field of activity,
+          because there is a possibility of remote work. I watch several blogs
+          on youtube about web development "Ulbi TV" and “WAYUP & Andrey
+          Gavrilov", I read the book “JavaScript Complete Guide". I like hiking,
+          playing volleyball, listening to music.
+        </p>
         <a href="#" className={styles.btn}>
           Read More
         </a>

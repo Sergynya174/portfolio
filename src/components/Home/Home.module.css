@@ -10,6 +10,8 @@
     position: relative;
     animation: my_animation 1s;
     animation-fill-mode: both;
+    max-width: 440px;
+    width: 100%;
 }
 
 .title{
@@ -39,10 +41,6 @@
     margin-left: 7px;
 }
 
-.text{
-    font-size: 1.6rem;
-}
-
 .iconLink{
     display: inline-flex;
     justify-content: center;
@@ -67,7 +65,8 @@
 .circle{
     border-radius: 50%;
 	height: 325px;
-	width: 325px;
+	max-width: 325px;
+    width: 100%;
 	background: #0ef;
     display: flex;
     justify-content: center;
@@ -93,6 +92,7 @@
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -123,6 +123,12 @@
 @media (max-width: 400px) {
     .subtitle{
         flex-direction: column; 
+    }
+    .circle{
+        height: 240px;
+    }
+    .span{
+        margin-left: 0;
     }
 }
 

@@ -1,8 +1,13 @@
 import React from "react";
 import styles from "./Home.module.css";
 import Foto from "../../images/foto.png";
+import MyCV from "../../file/Матросов Сергей Владимирович.pdf";
+import { saveAs } from "file-saver";
 
 const Home = () => {
+  const downloadFile = () => {
+    saveAs(MyCV);
+  };
   return (
     <section className={styles.home} id="home">
       <div className={styles.container}>
@@ -11,7 +16,6 @@ const Home = () => {
         <h3 className={styles.subtitle}>
           And I`m a <span className={styles.span}>Frontend Developer</span>
         </h3>
-        <p className={styles.text}>Hello</p>
         <div className={styles.socialMedia}>
           <a className={styles.iconLink} href="https://t.me/SergoMatrosov174">
             <i className="bx bxl-telegram"></i>
@@ -29,9 +33,9 @@ const Home = () => {
             <i className="bx bxl-github"></i>
           </a>
         </div>
-        <a href="#" className={styles.btn}>
+        <button onClick={downloadFile} className={styles.btn}>
           Download CV
-        </a>
+        </button>
       </div>
       <div className={styles.circle}>
         <img className={styles.img} src={Foto} alt="Фото" />
