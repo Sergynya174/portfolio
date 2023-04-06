@@ -1,6 +1,7 @@
-import KiberGid from "../images/kibergid.png";
-import Chat from "../images/chat.png";
-import Mesto from "../images/mesto.png";
+import KiberGid from "../images/kibergid.jpg";
+import Chat from "../images/chat.jpg";
+import Mesto from "../images/mesto.jpg";
+import Travel from "../images/travel.jpg";
 
 const images = [
   {
@@ -20,6 +21,12 @@ const images = [
     image: Mesto,
     link: "https://sergynya174.github.io/react-mesto-auth/",
     text: "Сервис предоставляет возможность делиться красивыми фотографиями мест в которых побывал фотограф. Технологии: HTML5, CCS3, JavaScript (стандарт ES6), React, Методология БЭМ, Flexbox, GRID, Webpack",
+  },
+  {
+    name: "Путешествия по России",
+    image: Travel,
+    link: "https://sergynya174.github.io/russian-travel/",
+    text: "Фронтенд проекта «Путешествия по России» — это одностраничный сайт с адаптивной вёрсткой для разных устройств. Технологии: HTML5, CSS3, БЭМ, Flexbox, Grid Layout, Figma.",
   },
 ];
 

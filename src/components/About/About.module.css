@@ -4,15 +4,15 @@
     align-items: center;
     gap: 2rem;
     background: var(--second-bg-color);
-    height: 100vh;
-    padding: 0 9% 2rem;
+    min-height: 100vh;
+    padding: 3rem 9% 2rem;
 }
 
 .circle{
     border-radius: 50%;
 	height: 325px;
-    max-width: 325px;
-    width: 100%;
+    width: 325px;
+    min-width: 325px;
 	border: 7px solid #0ef;
     display: flex;
     justify-content: center;
@@ -73,14 +73,11 @@
 
 @media (max-width: 768px) {
     .about{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
 @media (max-width: 400px) {
-    .about{
-        flex-direction: column;
-    }
     .circle{
         height: 240px;
     }

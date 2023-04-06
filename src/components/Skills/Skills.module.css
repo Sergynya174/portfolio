@@ -4,7 +4,7 @@
     align-items: center;
     gap: 5rem;
     padding: 2rem;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .infoContainer{
@@ -105,12 +105,5 @@
 @media (max-width: 420px) {
     .textTechnologies{
         margin: 0;
-    }
-    #iconSkills{
-        font-size: 2rem;
-    }
-    .box{
-        gap: 1rem;
-        padding: 1rem;
     }
 }
