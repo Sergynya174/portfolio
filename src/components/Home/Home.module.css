@@ -2,7 +2,7 @@
     min-height: 100vh;
     padding: 10rem 9% 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -10,7 +10,7 @@
     position: relative;
     animation: my_animation 1s;
     animation-fill-mode: both;
-    max-width: 440px;
+    max-width: 640px;
     width: 100%;
 }
 
