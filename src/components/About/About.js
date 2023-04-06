@@ -8,7 +8,7 @@ const About = () => {
       <div className={styles.circle}>
         <img className={styles.img} src={Foto} alt="Фото" />
       </div>
-      <div className={styles.content}>
+      <div className={styles.container}>
         <h2 className={styles.title}>
           About <span className={styles.span}>Me</span>
         </h2>

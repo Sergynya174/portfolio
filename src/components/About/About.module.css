@@ -20,6 +20,10 @@
     box-shadow: 0 0 7px 3px #0ef;
 }
 
+.container{
+    width: 80%;
+}
+
 .img{
     margin-top: 8px;
 }
