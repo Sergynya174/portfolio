@@ -120,12 +120,12 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
     .subtitle{
         flex-direction: column; 
     }
     .circle{
-        height: 240px;
+        height: 260px;
     }
     .span{
         margin-left: 0;
