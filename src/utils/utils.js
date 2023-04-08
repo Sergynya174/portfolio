@@ -20,7 +20,7 @@ const images = [
     name: "Место",
     image: Mesto,
     link: "https://sergynya174.github.io/react-mesto-auth/",
-    text: "Сервис предоставляет возможность делиться красивыми фотографиями мест в которых побывал фотограф. Технологии: HTML5, CCS3, JavaScript (стандарт ES6), React, Методология БЭМ, Flexbox, GRID, Webpack",
+    text: "Сервис предоставляет возможность делиться красивыми фотографиями мест в которых побывал фотограф. Технологии: HTML5, CCS3, JavaScript, React, Методология БЭМ, Flexbox, GRID, Webpack",
   },
   {
     name: "Путешествия по России",
