@@ -33,7 +33,7 @@
 .span{
     color: var(--main-color);
     border-right: 2px solid var(--main-color);
-    animation: flashingBorder 0.75s ease infinite, printedText 5s steps(17) infinite;
+    animation: flashingBorder 0.75s ease infinite, printedText 3.5s steps(17) infinite;
     width: 17ch;
     white-space: nowrap;
     overflow: hidden;
