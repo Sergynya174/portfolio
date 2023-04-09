@@ -40,8 +40,11 @@
     color: var(--main-color);
 }
 
-.linkActive{
+.linkColor{
     color: var(--main-color);
+    font-size: 1.7rem;
+    margin-left: 4rem;
+    transition: .3s;
 }
 
 @media (max-width: 991px) {
@@ -68,6 +71,11 @@
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     }
     .link{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .linkColor{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
