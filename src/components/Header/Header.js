@@ -12,8 +12,6 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  console.log(location);
-
   const home = location.hash === "#home";
   const about = location.hash === "#about_me";
   const skills = location.hash === "#skills";
@@ -34,7 +32,10 @@ const Header = () => {
               id={styles.menu}
             ></i>
             <nav className={styles.navbar}>
-              <a className={home ? styles.linkColor : styles.link} href="#home">
+              <a
+                className={!home ? styles.linkColor : styles.link}
+                href="#home"
+              >
                 Home
               </a>
               <a

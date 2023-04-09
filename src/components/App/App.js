@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "../Header/Header";
 import Home from "../Home/Home";
 import About from "../About/About";
@@ -9,7 +10,7 @@ import "boxicons";
 
 const App = () => {
   return (
-    <>
+    <div>
       <Header />
       <Home />
       <About />
@@ -17,7 +18,7 @@ const App = () => {
       <Portfolio />
       <Contacts />
       <Footer />
-    </>
+    </div>
   );
 };
 
