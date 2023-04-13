@@ -10,7 +10,7 @@ const Skills = () => {
         </h2>
         <div className={styles.info}>
           <i className="bx bx-code-alt" id={styles.icon}></i>
-          <h3 className={styles.subtitle}>Web Developmen</h3>
+          <h3 className={styles.subtitle}>Web Development</h3>
           <div className={styles.box}>
             <div>
               <i className="bx bxl-html5" id={styles.iconSkills}></i>
@@ -53,9 +53,6 @@ const Skills = () => {
               <p className={styles.textTechnologies}>MongoDB</p>
             </div>
           </div>
-          <a href="#" className={styles.btn}>
-            Read More
-          </a>
         </div>
       </div>
     </section>

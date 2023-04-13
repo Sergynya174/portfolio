@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./Portfolio.module.css";
-import Images from "../../utils/utils";
+import styles from "./Projects.module.css";
+import { Images } from "../../utils/utils";
 
-const Portfolio = () => {
+const Projects = () => {
   return (
-    <section className={styles.portfolio} id="portfolio">
+    <section className={styles.projects} id="projects">
       <h2 className={styles.title}>
         Latest <span className={styles.span}>Projects</span>
       </h2>
@@ -28,4 +28,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

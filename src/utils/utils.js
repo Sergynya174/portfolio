@@ -3,31 +3,37 @@ import Chat from "../images/chat.jpg";
 import Mesto from "../images/mesto.jpg";
 import Travel from "../images/travel.jpg";
 
-const images = [
+export const Images = [
   {
-    name: "КиберГид",
+    name: "CyberGid",
     image: KiberGid,
     link: "https://kibergid.ru/",
-    text: "Командный проект аудиогид для создания, прохождения и прослушивания интересных маршрутов в городах России. Технологии: React.js, Redux, mui, axios, Git.",
+    text: "A team project audio guide for creating, passing and listening to interesting routes in Russian cities. Technologies: React.js, Redux, mui, axios, Git.",
   },
   {
-    name: "Чат",
+    name: "Chat",
     image: Chat,
     link: "https://luminous-lebkuchen-c842a3.netlify.app/",
-    text: "Чат в реальном времени для общения! Технологии: React.js, Socket.io, Node.js, Express.js",
+    text: "Real-time chat for communication! Technologies: React.js, Socket.io, Node.js, Express.js",
   },
   {
-    name: "Место",
+    name: "Mesto",
     image: Mesto,
     link: "https://sergynya174.github.io/react-mesto-auth/",
-    text: "Сервис предоставляет возможность делиться красивыми фотографиями мест в которых побывал фотограф. Технологии: HTML5, CCS3, JavaScript, React, Методология БЭМ, Flexbox, GRID, Webpack",
+    text: "The service provides an opportunity to share beautiful photos of places visited by the photographer. Technologies: HTML5, CCS3, JavaScript, React, BEM Methodology, Flexbox, GRID, Webpack",
   },
   {
-    name: "Путешествия по России",
+    name: "Travel in Russia",
     image: Travel,
     link: "https://sergynya174.github.io/russian-travel/",
-    text: "Фронтенд проекта «Путешествия по России» — это одностраничный сайт с адаптивной вёрсткой для разных устройств. Технологии: HTML5, CSS3, БЭМ, Flexbox, Grid Layout, Figma.",
+    text: "Travels in RussiaFrontend of the project 'Travels in Russia' is a one—page website with adaptive layout for different devices. Technologies: HTML5, CSS3, BEM, Flexbox, Grid Layout, Figma.",
   },
 ];
 
-export default images;
+export const HeaderName = [
+  { name: "Home", link: "#home" },
+  { name: "About", link: "#about_me" },
+  { name: "Skills", link: "#skills" },
+  { name: "Projects", link: "#projects" },
+  { name: "Contacts", link: "#contacts" },
+];

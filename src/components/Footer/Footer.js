@@ -5,9 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p className={styles.text}>
-          Copyright &copy; 2023 by Sergey Matrosov | All Rights Reserved.
-        </p>
+        <p className={styles.text}>Copyright &copy; 2023 by Sergey Matrosov.</p>
       </div>
       <div className={styles.iconTop}>
         <a className={styles.link} href="#home">

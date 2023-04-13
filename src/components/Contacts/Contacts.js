@@ -21,7 +21,7 @@ const Contacts = () => {
   return (
     <section className={styles.contacts} id="contacts">
       <h2 className={styles.title}>
-        Contact <span className={styles.span}>Me!</span>
+        Contact <span className={styles.span}>Me</span>
       </h2>
       <form className={styles.form}>
         <div className={styles.inputBox}>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import useWindowDimensions from "../../utils/useWindowDimensios";
 import styles from "./Header.module.css";
 import { useLocation } from "react-router-dom";
+import { HeaderName } from "../../utils/utils";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,12 +13,6 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  const home = location.hash === "#home";
-  const about = location.hash === "#about_me";
-  const skills = location.hash === "#skills";
-  const portfolio = location.hash === "#portfolio";
-  const contacts = location.hash === "#contacts";
-
   return (
     <header className={styles.header}>
       <a href="#" className={styles.logo}>
@@ -25,45 +20,30 @@ const Header = () => {
       </a>
       {width < 768 ? (
         isOpen ? (
-          <>
+          <div>
             <i
               onClick={clickOpenNavbar}
               className="bx bx-x"
               id={styles.menu}
             ></i>
             <nav className={styles.navbar}>
-              <a
-                className={!home ? styles.linkColor : styles.link}
-                href="#home"
-              >
-                Home
-              </a>
-              <a
-                className={about ? styles.linkColor : styles.link}
-                href="#about_me"
-              >
-                About
-              </a>
-              <a
-                className={skills ? styles.linkColor : styles.link}
-                href="#skills"
-              >
-                Skills
-              </a>
-              <a
-                className={portfolio ? styles.linkColor : styles.link}
-                href="#portfolio"
-              >
-                Portfolio
-              </a>
-              <a
-                className={contacts ? styles.linkColor : styles.link}
-                href="#contacts"
-              >
-                Contact
-              </a>
+              <div>
+                {HeaderName.map((item) => (
+                  <a
+                    className={
+                      location.hash === item.link
+                        ? styles.linkColor
+                        : styles.link
+                    }
+                    href={item.link}
+                    onClick={clickOpenNavbar}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
             </nav>
-          </>
+          </div>
         ) : (
           <i
             onClick={clickOpenNavbar}
@@ -73,30 +53,17 @@ const Header = () => {
         )
       ) : (
         <nav className={styles.navbar}>
-          <a className={home ? styles.linkColor : styles.link} href="#home">
-            Home
-          </a>
-          <a
-            className={about ? styles.linkColor : styles.link}
-            href="#about_me"
-          >
-            About
-          </a>
-          <a className={skills ? styles.linkColor : styles.link} href="#skills">
-            Skills
-          </a>
-          <a
-            className={portfolio ? styles.linkColor : styles.link}
-            href="#portfolio"
-          >
-            Portfolio
-          </a>
-          <a
-            className={contacts ? styles.linkColor : styles.link}
-            href="#contacts"
-          >
-            Contact
-          </a>
+          {HeaderName.map((item) => (
+            <a
+              className={
+                location.hash === item.link ? styles.linkColor : styles.link
+              }
+              href={item.link}
+              onClick={clickOpenNavbar}
+            >
+              {item.name}
+            </a>
+          ))}
         </nav>
       )}
     </header>
