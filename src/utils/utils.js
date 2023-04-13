@@ -14,7 +14,7 @@ export const Images = [
     name: "Chat",
     image: Chat,
     link: "https://luminous-lebkuchen-c842a3.netlify.app/",
-    text: "Real-time chat for communication! Technologies: React.js, Socket.io, Node.js, Express.js",
+    text: "Real-time chat: users can send and receive messages in real-time, send and receive emojis in messages! Technologies: React.js, Socket.io, Node.js, Express.js",
   },
   {
     name: "Mesto",
