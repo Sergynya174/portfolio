@@ -35,5 +35,5 @@ export const HeaderName = [
   { name: "About", link: "#about_me" },
   { name: "Skills", link: "#skills" },
   { name: "Projects", link: "#projects" },
-  { name: "Contacts", link: "#contacts" },
+  { name: "Contacts", link: "#contact" },
 ];

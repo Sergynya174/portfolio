@@ -14,13 +14,14 @@ const About = () => {
         </h2>
         <h3 className={styles.subtitle}>Frontend Developer</h3>
         <p className={styles.text}>
-          I like that the profession of Frontend developer leaves room for
-          creativity, because any program can be written in many ways with
-          different approaches. I decided to change the field of activity,
-          because there is a possibility of remote work. I watch several blogs
-          on youtube about web development "Ulbi TV" and “WAYUP & Andrey
-          Gavrilov", I read the book “JavaScript Complete Guide". I like hiking,
-          playing volleyball, listening to music.
+          Graduated from the Web Developer course at Yandex.Practicum. I decided
+          to change the field of activity, because there is a possibility of
+          remote work. I chose the profession of Frontend developer because it
+          leaves room for creativity, since any program can be written in many
+          ways with different approaches. I watch several blogs on youtube about
+          web development "Ulbi TV" and “WAYUP & Andrey Gavrilov", I read the
+          book “JavaScript Complete Guide". I like hiking, playing volleyball,
+          listening to music.
         </p>
       </div>
     </section>
