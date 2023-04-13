@@ -20,9 +20,6 @@ const Home = () => {
           <a className={styles.iconLink} href="https://t.me/SergoMatrosov174">
             <i className="bx bxl-telegram"></i>
           </a>
-          <a className={styles.iconLink} href="https://vk.com/bear_74">
-            <i className="bx bxl-vk"></i>
-          </a>
           <a
             className={styles.iconLink}
             href="https://www.linkedin.com/mwlite/in/сергей-матросов-96914b240"
