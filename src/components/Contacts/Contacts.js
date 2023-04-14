@@ -19,7 +19,7 @@ const Contacts = () => {
   };
 
   return (
-    <section className={styles.contacts} id="contacts">
+    <section className={styles.contacts} id="contact">
       <h2 className={styles.title}>
         Contact <span className={styles.span}>Me</span>
       </h2>
