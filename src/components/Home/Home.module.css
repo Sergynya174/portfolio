@@ -33,8 +33,8 @@
 .span{
     color: var(--main-color);
     border-right: 2px solid var(--main-color);
-    animation: flashingBorder 0.75s ease infinite, printedText 3.5s steps(17) infinite;
-    width: 17ch;
+    animation: typing 0.75s ease infinite, blink-caret 3.5s steps(17) infinite;
+    width: 11em;
     white-space: nowrap;
     overflow: hidden;
     display: block;
@@ -120,15 +120,18 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
     .subtitle{
         flex-direction: column; 
     }
-    .circle{
-        height: 260px;
-    }
     .span{
         margin-left: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .circle{
+        height: 260px;
     }
 }
 
@@ -169,8 +172,8 @@
     }
 }
 
-@keyframes flashingBorder {
-    0% {
+@keyframes typing {
+     0% {
         border-color: var(--main-color);
     }
 
@@ -179,12 +182,12 @@
     }
     100% {
         border-color: var(--main-color);
-    }
+    } 
 }
 
-@keyframes printedText {
-    from {
+@keyframes blink-caret {
+     from {
         width: 0;
-    }
+    } 
 }
 
