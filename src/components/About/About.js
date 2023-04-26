@@ -18,10 +18,24 @@ const About = () => {
           to change the field of activity, because there is a possibility of
           remote work. I chose the profession of Frontend developer because it
           leaves room for creativity, since any program can be written in many
-          ways with different approaches. I watch several blogs on youtube about
-          web development "Ulbi TV" and “WAYUP & Andrey Gavrilov", I read the
-          book “JavaScript Complete Guide". I like hiking, playing volleyball,
-          listening to music.
+          ways with different approaches. Prefer a job that could bring not only
+          benefits, but also help develop my potential, soft skills and hard
+          skills. I get great pleasure from the things I do:
+          <ul className={styles.ul}>
+            <li className={styles.li}>
+              - I develop websites and applications;{" "}
+            </li>
+            <li className={styles.li}>
+              - I follow the latest news and technologies from the field of web
+              development;{" "}
+            </li>
+            <li className={styles.li}>
+              - I'm constantly trying to improvethe code I write by doing work
+              on bugs.{" "}
+            </li>
+          </ul>
+          In my free time from development, I like to go hiking, play
+          volleyball, listen to music.
         </p>
       </div>
     </section>

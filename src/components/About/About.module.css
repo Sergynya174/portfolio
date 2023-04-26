@@ -63,6 +63,14 @@
     box-shadow: none;
 }
 
+.ul{
+    margin-left: 15px;
+}
+
+.li{
+    list-style-type: none;
+}
+
 @media (max-width: 991px) {
     .about{
         flex-direction: column-reverse;
