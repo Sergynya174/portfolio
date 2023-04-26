@@ -3,19 +3,15 @@ import styles from "./Contacts.module.css";
 
 const Contacts = () => {
   const [toSend, setToSend] = useState({
-    name: "",
-    email: "",
-    message: "",
-    mobile: "",
-    subject: "",
+    Name: "",
+    Email: "",
+    Message: "",
+    Mobile: "",
+    Subject: "",
   });
 
   const handleChange = (evt) => {
-    setToSend({ ...toSend, [evt.target.name]: evt.target.value });
-  };
-
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
+    setToSend({ ...toSend, [evt.target.Name]: evt.target.value });
   };
 
   return (
@@ -23,10 +19,14 @@ const Contacts = () => {
       <h2 className={styles.title}>
         Contact <span className={styles.span}>Me</span>
       </h2>
-      <form className={styles.form}>
+      <form
+        action="https://formspree.io/f/mpzeknrn"
+        method="POST"
+        className={styles.form}
+      >
         <div className={styles.inputBox}>
           <input
-            name="name"
+            name="Name"
             value={toSend.name}
             onChange={handleChange}
             className={styles.input}
@@ -34,7 +34,7 @@ const Contacts = () => {
             placeholder="Full name"
           />
           <input
-            name="email"
+            name="Email"
             value={toSend.email}
             onChange={handleChange}
             className={styles.input}
@@ -44,7 +44,7 @@ const Contacts = () => {
         </div>
         <div className={styles.inputBox}>
           <input
-            name="number"
+            name="Number"
             value={toSend.number}
             onChange={handleChange}
             className={styles.input}
@@ -52,7 +52,7 @@ const Contacts = () => {
             placeholder="Mobile Number"
           />
           <input
-            name="subject"
+            name="Subject"
             value={toSend.subject}
             onChange={handleChange}
             className={styles.input}
@@ -63,14 +63,15 @@ const Contacts = () => {
         <textarea
           onChange={handleChange}
           className={styles.textArea}
-          name="message"
+          name="Message"
           value={toSend.message}
-          id=""
           cols="30"
           rows="10"
           placeholder="Your message"
         ></textarea>
-        <input type="submit" value="Send Message" className={styles.btn} />
+        <button type="submit" className={styles.btn}>
+          Send Message
+        </button>
       </form>
     </section>
   );
