@@ -26,7 +26,7 @@ export const Images = [
     name: "Travel in Russia",
     image: Travel,
     link: "https://sergynya174.github.io/russian-travel/",
-    text: "Travels in RussiaFrontend of the project 'Travels in Russia' is a one—page website with adaptive layout for different devices. Technologies: HTML5, CSS3, BEM, Flexbox, Grid Layout, Figma.",
+    text: "Project 'Travels in Russia' is a one—page website with adaptive layout for different devices. Technologies: HTML5, CSS3, BEM, Flexbox, Grid Layout, Figma.",
   },
 ];
 
