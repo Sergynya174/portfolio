@@ -5,7 +5,7 @@ import Travel from "../images/travel.jpg";
 
 export const Images = [
   {
-    name: "CyberGid",
+    name: "KiberGid",
     image: KiberGid,
     link: "https://kibergid.ru/",
     text: "A team project audio guide for creating, passing and listening to interesting routes in Russian cities. Technologies: React.js, Redux, mui, axios, Git.",
