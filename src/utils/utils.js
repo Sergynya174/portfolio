@@ -2,6 +2,7 @@ import KiberGid from "../images/kibergid.jpg";
 import Chat from "../images/chat.jpg";
 import Mesto from "../images/mesto.jpg";
 import Travel from "../images/travel.jpg";
+import Parking from "../images/parking.jpg";
 
 export const Images = [
   {
@@ -27,6 +28,12 @@ export const Images = [
     image: Travel,
     link: "https://sergynya174.github.io/russian-travel/",
     text: "Project 'Travels in Russia' is a one—page website with adaptive layout for different devices. Technologies: HTML5, CSS3, BEM, Flexbox, Grid Layout, Figma.",
+  },
+  {
+    name: "Gde parking",
+    image: Parking,
+    link: "https://6473407ec2068c2ce981ec3f--genuine-sundae-d5fa9f.netlify.app/",
+    text: "An application for finding free parking spaces at the house. Technologies: React, Redux, Axios, Yandex Maps API",
   },
 ];
 
