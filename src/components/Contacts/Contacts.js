@@ -19,6 +19,10 @@ const Contacts = () => {
       <h2 className={styles.title}>
         Contact <span className={styles.span}>Me</span>
       </h2>
+      <p className={styles.text}>
+        Are you working on something interesting and great? I will be happy to
+        help you with this! Write to me and we will discuss the details!
+      </p>
       <form
         action="https://formspree.io/f/mpzeknrn"
         method="POST"
