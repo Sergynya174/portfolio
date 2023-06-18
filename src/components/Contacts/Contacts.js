@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Contacts.module.css";
 
-const Contacts = () => {
+const Contacts = ({ t }) => {
   const [toSend, setToSend] = useState({
     Name: "",
     Email: "",
@@ -17,12 +17,9 @@ const Contacts = () => {
   return (
     <section className={styles.contacts} id="contact">
       <h2 className={styles.title}>
-        Contact <span className={styles.span}>Me</span>
+        {t("contact")} <span className={styles.span}>{t("contactMe")}</span>
       </h2>
-      <p className={styles.text}>
-        Are you working on something interesting and great? I will be happy to
-        help you with this! Write to me and we will discuss the details!
-      </p>
+      <p className={styles.text}>{t("text")}</p>
       <form
         action="https://formspree.io/f/mpzeknrn"
         method="POST"
@@ -35,7 +32,7 @@ const Contacts = () => {
             onChange={handleChange}
             className={styles.input}
             type="text"
-            placeholder="Full name"
+            placeholder={t("fullName")}
           />
           <input
             name="Email"
@@ -43,7 +40,7 @@ const Contacts = () => {
             onChange={handleChange}
             className={styles.input}
             type="email"
-            placeholder="Email Address"
+            placeholder={t("address")}
           />
         </div>
         <div className={styles.inputBox}>
@@ -53,7 +50,7 @@ const Contacts = () => {
             onChange={handleChange}
             className={styles.input}
             type="number"
-            placeholder="Mobile Number"
+            placeholder={t("mobileNumber")}
           />
           <input
             name="Subject"
@@ -61,7 +58,7 @@ const Contacts = () => {
             onChange={handleChange}
             className={styles.input}
             type="text"
-            placeholder="Email Subject"
+            placeholder={t("emailSubject")}
           />
         </div>
         <textarea
@@ -71,10 +68,10 @@ const Contacts = () => {
           value={toSend.message}
           cols="30"
           rows="10"
-          placeholder="Your message"
+          placeholder={t("yourMessage")}
         ></textarea>
         <button type="submit" className={styles.btn}>
-          Send Message
+          {t("send")}
         </button>
       </form>
     </section>

@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 import { useLocation } from "react-router-dom";
 import { HeaderName } from "../../utils/utils";
 
-const Header = () => {
+const Header = ({ t, i18n }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { width } = useWindowDimensions();
   const location = useLocation();
@@ -13,10 +13,14 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <header className={styles.header}>
       <a href="#" className={styles.logo}>
-        Portfolio
+        {t("logo")}
       </a>
       {width < 768 ? (
         isOpen ? (
@@ -41,6 +45,21 @@ const Header = () => {
                     {item.name}
                   </a>
                 ))}
+                {i18n.resolvedLanguage === "en" ? (
+                  <button
+                    onClick={() => changeLanguage("ru")}
+                    className={styles.language}
+                  >
+                    Ru
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => changeLanguage("en")}
+                    className={styles.language}
+                  >
+                    En
+                  </button>
+                )}
               </div>
             </nav>
           </div>
@@ -64,6 +83,23 @@ const Header = () => {
               {item.name}
             </a>
           ))}
+          <div className={styles.container_language}>
+            {i18n.resolvedLanguage === "en" ? (
+              <button
+                onClick={() => changeLanguage("ru")}
+                className={styles.language}
+              >
+                Ru
+              </button>
+            ) : (
+              <button
+                onClick={() => changeLanguage("en")}
+                className={styles.language}
+              >
+                En
+              </button>
+            )}
+          </div>
         </nav>
       )}
     </header>

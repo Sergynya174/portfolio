@@ -7,17 +7,19 @@ import Projects from "../Projects/Projects";
 import Contacts from "../Contacts/Contacts";
 import Footer from "../Footer/Footer";
 import "boxicons";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div>
-      <Header />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contacts />
-      <Footer />
+      <Header t={t} i18n={i18n} />
+      <Home t={t} />
+      <About t={t} />
+      <Skills t={t} />
+      <Projects t={t} />
+      <Contacts t={t} />
+      <Footer t={t} />
     </div>
   );
 };

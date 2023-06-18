@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "./Footer.module.css";
 
-const Footer = () => {
+const Footer = ({ t }) => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p className={styles.text}>Copyright &copy; 2023 by Sergey Matrosov.</p>
+        <p className={styles.text}>
+          {t("copyright")} &copy; {t("2023")}
+        </p>
       </div>
       <div className={styles.iconTop}>
         <a className={styles.link} href="#home">

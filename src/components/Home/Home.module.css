@@ -34,7 +34,7 @@
     color: var(--main-color);
     border-right: 2px solid var(--main-color);
     animation: typing 0.75s ease infinite, blink-caret 3.5s steps(17) infinite;
-    width: 11em;
+    width: 12.2em;
     white-space: nowrap;
     overflow: hidden;
     display: block;

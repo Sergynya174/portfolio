@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Home.module.css";
 import Foto from "../../images/foto.png";
 import MyCV from "../../file/Матросов Сергей Владимирович.pdf";
 import { saveAs } from "file-saver";
 
-const Home = () => {
+const Home = ({ t }) => {
   const downloadFile = () => {
     saveAs(MyCV);
   };
+
   return (
     <section className={styles.home} id="home">
       <div className={styles.container}>
-        <h3 className={styles.subtitle}>Hello, It's Me</h3>
-        <h1 className={styles.title}>Sergey Matrosov</h1>
+        <h3 className={styles.subtitle}>{t("hello")}</h3>
+        <h1 className={styles.title}>{t("name")}</h1>
         <h3 className={styles.subtitle}>
-          And I'm a <span className={styles.span}>Frontend Developer</span>
+          {t("and")} <span className={styles.span}>{t("job")}</span>
         </h3>
         <div className={styles.socialMedia}>
           <a className={styles.iconLink} href="https://t.me/SergoMatrosov174">
@@ -31,7 +32,7 @@ const Home = () => {
           </a>
         </div>
         <button onClick={downloadFile} className={styles.btn}>
-          Download CV
+          {t("download")}
         </button>
       </div>
       <div className={styles.circle}>

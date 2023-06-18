@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "./Skills.module.css";
 
-const Skills = () => {
+const Skills = ({ t }) => {
   return (
     <section className={styles.skills} id="skills">
       <div className={styles.infoContainer}>
         <h2 className={styles.title}>
-          My <span className={styles.span}>Skills</span>
+          {t("my")} <span className={styles.span}>{t("skills")}</span>
         </h2>
         <div className={styles.info}>
           <i className="bx bx-code-alt" id={styles.icon}></i>
-          <h3 className={styles.subtitle}>Web Development</h3>
+          <h3 className={styles.subtitle}>{t("web")}</h3>
           <div className={styles.box}>
             <div>
               <i className="bx bxl-html5" id={styles.iconSkills}></i>

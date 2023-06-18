@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./Projects.module.css";
 import { Images } from "../../utils/utils";
 
-const Projects = () => {
+const Projects = ({ t }) => {
   return (
     <section className={styles.projects} id="projects">
       <h2 className={styles.title}>
-        Latest <span className={styles.span}>Projects</span>
+        {t("latest")} <span className={styles.span}>{t("projects")}</span>
       </h2>
       <div className={styles.container}>
         {Images.map((item, index) => {

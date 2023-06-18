@@ -12,7 +12,7 @@
 }
 
 .navbar{
-    display: block;
+    display: flex;
 }
 
 .logo{
@@ -20,6 +20,22 @@
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
+}
+
+.container_language{
+    margin-left: 4rem;
+}
+
+.language{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 1.7rem;
+}
+
+.language:hover{
+    color: var(--main-color);
 }
 
 #menu{
