@@ -2,7 +2,6 @@ import { useState } from "react";
 import useWindowDimensions from "../../utils/useWindowDimensios";
 import styles from "./Header.module.css";
 import { useLocation } from "react-router-dom";
-import { HeaderName } from "../../utils/utils";
 
 const Header = ({ t, i18n }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,19 +31,55 @@ const Header = ({ t, i18n }) => {
             ></i>
             <nav className={styles.navbar}>
               <div>
-                {HeaderName.map((item) => (
-                  <a
-                    className={
-                      location.hash === item.link
-                        ? styles.linkColor
-                        : styles.link
-                    }
-                    href={item.link}
-                    onClick={clickOpenNavbar}
-                  >
-                    {item.name}
-                  </a>
-                ))}
+                <a
+                  className={
+                    location.hash === "home" ? styles.linkColor : styles.link
+                  }
+                  href="#home"
+                  onClick={clickOpenNavbar}
+                >
+                  {t("Home")}
+                </a>
+                <a
+                  className={
+                    location.hash === "about_me"
+                      ? styles.linkColor
+                      : styles.link
+                  }
+                  href="#about_me"
+                  onClick={clickOpenNavbar}
+                >
+                  {t("About")}
+                </a>
+                <a
+                  className={
+                    location.hash === "skills" ? styles.linkColor : styles.link
+                  }
+                  href="#skills"
+                  onClick={clickOpenNavbar}
+                >
+                  {t("Skills")}
+                </a>
+                <a
+                  className={
+                    location.hash === "projects"
+                      ? styles.linkColor
+                      : styles.link
+                  }
+                  href="#projects"
+                  onClick={clickOpenNavbar}
+                >
+                  {t("Projects")}
+                </a>
+                <a
+                  className={
+                    location.hash === "contact" ? styles.linkColor : styles.link
+                  }
+                  href="#contact"
+                  onClick={clickOpenNavbar}
+                >
+                  {t("Contact")}
+                </a>
                 {i18n.resolvedLanguage === "en" ? (
                   <button
                     onClick={() => changeLanguage("ru")}
@@ -72,17 +107,51 @@ const Header = ({ t, i18n }) => {
         )
       ) : (
         <nav className={styles.navbar}>
-          {HeaderName.map((item) => (
-            <a
-              className={
-                location.hash === item.link ? styles.linkColor : styles.link
-              }
-              href={item.link}
-              onClick={clickOpenNavbar}
-            >
-              {item.name}
-            </a>
-          ))}
+          <a
+            className={
+              location.hash === "home" ? styles.linkColor : styles.link
+            }
+            href="#home"
+            onClick={clickOpenNavbar}
+          >
+            {t("Home")}
+          </a>
+          <a
+            className={
+              location.hash === "about_me" ? styles.linkColor : styles.link
+            }
+            href="#about_me"
+            onClick={clickOpenNavbar}
+          >
+            {t("About")}
+          </a>
+          <a
+            className={
+              location.hash === "skills" ? styles.linkColor : styles.link
+            }
+            href="#skills"
+            onClick={clickOpenNavbar}
+          >
+            {t("Skills")}
+          </a>
+          <a
+            className={
+              location.hash === "projects" ? styles.linkColor : styles.link
+            }
+            href="#projects"
+            onClick={clickOpenNavbar}
+          >
+            {t("Projects")}
+          </a>
+          <a
+            className={
+              location.hash === "contact" ? styles.linkColor : styles.link
+            }
+            href="#contact"
+            onClick={clickOpenNavbar}
+          >
+            {t("Contact")}
+          </a>
           <div className={styles.container_language}>
             {i18n.resolvedLanguage === "en" ? (
               <button

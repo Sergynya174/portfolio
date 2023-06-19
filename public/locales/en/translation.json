@@ -27,5 +27,20 @@
     "emailSubject": "Email subject",
     "yourMessage": "Your message",
     "copyright": "Copyright",
-    "2023": "2023 by Sergey Matrosov"
+    "2023": "2023 by Sergey Matrosov",
+    "Home": "Home",
+    "About": "About me",
+    "Skills": "Skills",
+    "Projects": "Projects",
+    "Contact": "Contact",
+    "Kibergid": "KiberGid",
+    "KibergidText": "A team project audio guide for creating, passing and listening to interesting routes in Russian cities. Technologies: React.js, Redux, mui, axios, Git.",
+    "Chat": "Chat",
+    "ChatText": "Real-time chat: users can send and receive messages in real-time, send and receive emojis in messages! Technologies: React.js, Socket.io, Node.js, Express.js",
+    "Mesto": "Mesto",
+    "MestoText": "The service provides an opportunity to share beautiful photos of places visited by the photographer. Technologies: HTML5, CCS3, JavaScript, React, BEM Methodology, Flexbox, GRID, Webpack",
+    "Travel": "Travel in Russia",
+    "TravelText": "Project 'Travels in Russia' is a one—page website with adaptive layout for different devices. Technologies: HTML5, CSS3, BEM, Flexbox, Grid Layout, Figma.",
+    "Parking": "Gde parking",
+    "ParkingText": "An application for finding free parking spaces at the house. Technologies: React, Redux, Axios, Yandex Maps API"
 }

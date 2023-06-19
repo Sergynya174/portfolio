@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 
 const App = () => {
   const { t, i18n } = useTranslation();
+
   return (
     <div>
       <Header t={t} i18n={i18n} />
