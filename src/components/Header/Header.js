@@ -80,22 +80,22 @@ const Header = ({ t, i18n }) => {
                 >
                   {t("Contact")}
                 </a>
-                {i18n.resolvedLanguage === "en" ? (
-                  <button
-                    onClick={() => changeLanguage("ru")}
-                    className={styles.language}
-                  >
-                    Ru
-                  </button>
-                ) : (
-                  <button
-                    onClick={() => changeLanguage("en")}
-                    className={styles.language}
-                  >
-                    En
-                  </button>
-                )}
               </div>
+              {i18n.resolvedLanguage === "en" ? (
+                <button
+                  onClick={() => changeLanguage("ru")}
+                  className={styles.language}
+                >
+                  Ru
+                </button>
+              ) : (
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className={styles.language}
+                >
+                  En
+                </button>
+              )}
             </nav>
           </div>
         ) : (
