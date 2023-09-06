@@ -32,7 +32,7 @@ export const Images = [
   {
     name: "Gde parking",
     image: Parking,
-    link: "https://6473407ec2068c2ce981ec3f--genuine-sundae-d5fa9f.netlify.app/",
+    link: "https://genuine-sundae-d5fa9f.netlify.app/start",
     text: "An application for finding free parking spaces at the house. Technologies: React, Redux, Axios, Yandex Maps API",
   },
 ];
