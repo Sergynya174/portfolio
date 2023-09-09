@@ -52,6 +52,10 @@ const Skills = ({ t }) => {
               <i className="bx bxl-mongodb" id={styles.iconSkills}></i>
               <p className={styles.textTechnologies}>MongoDB</p>
             </div>
+            <div>
+              <i className="bx bxl-vuejs" id={styles.iconSkills}></i>
+              <p className={styles.textTechnologies}>Vue</p>
+            </div>
           </div>
         </div>
       </div>

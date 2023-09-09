@@ -42,5 +42,7 @@
     "Travel": "Путешествуя по России",
     "TravelText": "Проект 'Путешествия по России' — это одностраничный сайт с адаптивной версткой для разных устройств. Технологии: HTML5, CSS3, BEM, Flexbox, Grid Layout, Figma.",
     "Parking": "Где парковка",
-    "ParkingText": "Приложение для поиска бесплатных парковочных мест у дома. Технологии: React, Redux, Axios, Yandex Maps API"
+    "ParkingText": "Приложение для поиска бесплатных парковочных мест у дома. Технологии: React, Redux, Axios, Yandex Maps API",
+    "Weather": "Прогноз погоды",
+    "WeatherText": "Получение прогноза погоды городов во всем мире. Технологии: Vue.js, Vuex, Sass, Axios"
 }

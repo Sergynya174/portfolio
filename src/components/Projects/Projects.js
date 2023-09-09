@@ -5,6 +5,7 @@ import Chat from "../../images/chat.jpg";
 import Mesto from "../../images/mesto.jpg";
 import Travel from "../../images/travel.jpg";
 import Parking from "../../images/parking.jpg";
+import Weather from "../../images/weather.jpg";
 
 const Projects = ({ t }) => {
   return (
@@ -70,6 +71,19 @@ const Projects = ({ t }) => {
             <a
               className={styles.link}
               href="https://6473407ec2068c2ce981ec3f--genuine-sundae-d5fa9f.netlify.app/"
+            >
+              <i className="bx bx-link-external" id={styles.icon}></i>
+            </a>
+          </div>
+        </div>
+        <div className={styles.box}>
+          <img className={styles.img} src={Weather} alt="Фото" />
+          <div className={styles.layer}>
+            <h4 className={styles.subtitle}>{t("Weather")}</h4>
+            <p className={styles.text}>{t("WeatherText")}</p>
+            <a
+              className={styles.link}
+              href="https://sergynya174.github.io/weather-vue/"
             >
               <i className="bx bx-link-external" id={styles.icon}></i>
             </a>

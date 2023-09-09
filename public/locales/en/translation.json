@@ -42,5 +42,7 @@
     "Travel": "Travel in Russia",
     "TravelText": "Project 'Travels in Russia' is a one—page website with adaptive layout for different devices. Technologies: HTML5, CSS3, BEM, Flexbox, Grid Layout, Figma.",
     "Parking": "Gde parking",
-    "ParkingText": "An application for finding free parking spaces at the house. Technologies: React, Redux, Axios, Yandex Maps API"
+    "ParkingText": "An application for finding free parking spaces at the house. Technologies: React, Redux, Axios, Yandex Maps API",
+    "Weather": "Weather forecast",
+    "WeatherText": "Getting the weather forecast of cities around the world. Technologies: Vue.js, Vuex, Sass, Axios"
 }
