@@ -44,5 +44,5 @@
     "Parking": "Где парковка",
     "ParkingText": "Приложение для поиска бесплатных парковочных мест у дома. Технологии: React, Redux, Axios, Yandex Maps API",
     "Weather": "Прогноз погоды",
-    "WeatherText": "Получение прогноза погоды городов во всем мире. Технологии: Vue.js, Vuex, Sass, Axios"
+    "WeatherText": "Получение прогноза погоды во всем мире. Технологии: Vue.js, Vuex, Sass, Axios"
 }

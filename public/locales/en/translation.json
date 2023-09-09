@@ -44,5 +44,5 @@
     "Parking": "Gde parking",
     "ParkingText": "An application for finding free parking spaces at the house. Technologies: React, Redux, Axios, Yandex Maps API",
     "Weather": "Weather forecast",
-    "WeatherText": "Getting the weather forecast of cities around the world. Technologies: Vue.js, Vuex, Sass, Axios"
+    "WeatherText": "Getting a worldwide weather forecast. Technologies: Vue.js, Vuex, Sass, Axios"
 }
